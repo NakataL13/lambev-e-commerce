@@ -1,0 +1,449 @@
+/* GENERAL */
+
+html {
+    box-sizing: border-box;
+
+}
+body {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+    background-color: #F7F6F2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+button {
+    color: #F74C25;
+}
+input:focus {
+    outline: none;
+  box-shadow:none;
+  border-bottom: 2px solid black
+}
+::placeholder {
+    color:#FAF6EC;
+    opacity:1;
+}
+
+/* HEADER */
+.header-element {
+    background-image: url("./images/backgr.webp");
+    background-repeat: no-repeat;
+    height: 200px;
+    opacity: 80%;
+  background-position: center; 
+  background-size:cover;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-ul > li {
+    margin: 1.5rem;
+}
+.li-item{
+    color:    #F74C25;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid transparent;
+    background-color: #EFEDE7;
+    border-radius: 18px;
+    padding: 0.5rem;
+    transition: 0.1s ease-in-out;
+}
+.li-item:hover {
+    background-color: gainsboro;
+    transition: 0.1s ease-in-out;
+}
+
+.logo-title {
+    color: #EFEDE7;
+    font-size: 10em;
+}
+
+
+/* MAIN */
+
+.main-element {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15rem;
+
+}
+
+.hero-img {
+    width: 25rem;
+    border-bottom-left-radius: 250px;
+    border-bottom-right-radius: 250px;
+    border-top-left-radius: 250px;
+    border-top-right-radius: 250px;
+}
+.main-hero-text {
+    max-width: 60%;
+    text-align: center;
+    color: #F74C25;
+    font-size: 1.7em;
+}
+.order-button {
+    color: #F74C25;
+    border: 1px solid #F74C25;
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 1rem;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+/* ZERO HERO */
+
+.hero-zero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+
+    color: #F74C25;
+}
+.zero-btn-one {
+    background-color: transparent;
+    border: 1px solid #F74C25;
+    padding: 8rem;
+    border-radius: 2px;
+    font-size: 2em;
+    cursor: pointer;
+    margin-right: 2rem;
+    transition: .1s ease-in-out;
+
+}
+.zero-btn-two {
+    background-color: transparent;
+    border: 1px solid #F74C25;
+    padding: 8rem;
+    border-radius: 200px;
+    font-size: 2em;
+    cursor: pointer;
+    margin-left: 8rem;
+    transition: .1s ease-in-out;
+}
+
+.zero-btn-two:hover {
+    transform: scale(1.3);
+}
+.zero-btn-one:hover {
+    transform: scale(1.3);
+}
+
+/* LAST HERO */
+.hero-two {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10rem;
+}
+.hero-img-two {
+    width: 25rem;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+.addition-order-button {
+    color: #F74C25;
+    border: 1px solid #F74C25;
+    background-color: transparent;
+    border-radius: 50px;
+    padding: 1rem;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.addition-order-a {
+    color: #F74C25;
+}
+
+/* FOOTER */
+.footer-element {
+    margin-top: 12rem;
+}
+.footer-title {
+    text-align: center;
+    margin: 0 auto;
+    color: #F74C25;
+}
+.fta {
+    color: #F74C25;
+    border: 1px solid #F74C25;
+    border-radius: 50px;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.images {
+    margin: 5rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-img {
+    width: 24%;
+    height: 600px;
+}
+
+.origin-footer {
+    background-color: #F74C25;
+    padding: 2rem;
+
+}
+.footer-article-one{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-text {
+    max-width: 20%;
+    text-align: center;
+    color: #F7F6F2;
+    font-size: 1.3em;
+}
+.footer-last-sec {
+    background-color: #F74C25;
+    padding: 2rem;
+}
+.para-last {
+    color: #EFEDE7;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.subscribe {
+    margin: 0 auto;
+    text-align: center;
+
+}
+.sub-title,
+.sub-para {
+    font-size: 1.4em;
+    color: #EFEDE7;
+}
+.sub-input {
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    padding: 1rem;
+    background-color:transparent;
+}
+.subscribe-button{
+    margin-left: 2rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+
+/* PRODUCT LIST PAGE */
+
+.product-title {
+    color: #F74C25;
+    text-align: center;
+    margin: 8rem 0;
+}
+.card-holder {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.card {
+    background-color: #EFEDE7;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 1px 1px 1px 1px #F74C25;
+}
+.card-title {
+    color: #F74C25;
+    font-size: 1.1em;
+}
+.card-price {
+    color: #F74C25;
+}
+.card-category {
+    border: 1px solid #F74C25;
+    color: #F74C25;
+    padding: 0.3rem;
+    border-radius: 20px;
+}
+
+.card-two-holder {
+    justify-content: space-between;
+    box-shadow: none;
+}
+.card:hover {
+    background-color: gainsboro;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+.card-title:hover {
+    color: #EFEDE7;
+}
+.card-price:hover {
+    color: #EFEDE7;
+}
+
+/* PRODUCT DETAILS */
+
+.product-details {
+    background-color: #EFEDE7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.product-img-holder {
+    border: 1px solid #F74C25;
+    border-radius: 12px;
+    margin: 5rem 0;
+    flex-basis: 30%;
+}
+.text-details {
+    border: 1px solid #F74C25;
+    padding: 3rem 1rem;
+    border-radius: 25px;
+    margin: 1rem 0;
+    flex-basis: 55%;
+}
+.detail-title {
+    color: #F74C25;
+    font-size: 2em;
+}
+.detail-add {
+    color: #F74C25;
+
+}
+.details-desc {
+    color: #F74C25;
+    width: 70%;
+}
+.add-delete {
+    color: #F74C25;
+    border: 1px solid #F74C25;
+    padding: 0.3rem 0.7rem;
+    border-radius: 12px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-weight: bold;
+}
+.price-info {
+    border-bottom: 2px solid #F74C25;
+    display: block;
+}
+.ingredients {
+    background-color: #F74C25;
+    color: #EFEDE7;
+    padding: 1rem;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.right-side {
+    margin-left: 25rem;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+.add-cart {
+    margin-top: 1rem;
+    background-color: transparent;
+    border: 1px solid #F74C25;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    font-size: 1.3em;
+}
+.ingredients:hover{
+    background-color: gainsboro;
+    color: #F74C25;
+}
+.add-cart:hover {
+    background-color: #F74C25;
+    color: #EFEDE7;
+}
+.price-info {
+    color: #F74C25;
+    font-size: 2em;
+    margin: 1rem 0;
+}
+
+/* RELATED */
+
+.related-products {
+    margin: 2rem 0;
+    padding: 2rem;
+}
+.related-product-title {
+    text-align: center;
+    font-size: 2em;
+    color: #F74C25;
+}
+
+
+/* ADD TO CART */
+
+.cart-item-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #F74C25;
+}
+.cart-ul-two > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.li-cart {
+    margin: 1rem;
+    color: #F74C25;
+    font-size: 1.3em;
+
+}
+.cart-item-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #F74C25;
+}
+.cart-img {
+    max-width: 15rem;
+}
+.list-separator {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.total {
+    text-align: right;
+    color: #F74C25;
+    margin-right: 5rem;
+}
+.cart-input{
+    width: 50%;
+    padding: 0.7rem;
+    border: 2px solid #F74C25;
+    border-radius: 18px;
+}
+/* CHECK OUT CSS IS IN MORE-CSS.CSS */

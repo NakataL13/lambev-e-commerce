@@ -1,0 +1,6 @@
+Main Color - #F7F6F2
+
+Buttons Color - #F74C25
+
+Products Background-color - #EFEDE7
+

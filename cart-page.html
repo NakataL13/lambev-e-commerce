@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <header class="header-element">
+      <section class="container-one">
+        <article class="main-nav-container">
+          <nav class="nav-ele">
+            <ul class="nav-ul">
+              <li><a href="index.html" class="li-item">Home</a></li>
+              <li>
+                <a href="product-page.html" class="li-item">Product List</a>
+              </li>
+              <li>
+                <a href="product-detail-page.html" class="li-item"
+                  >Product Details</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </article>
+      </section>
+
+      <section class="logo">
+        <h1 class="logo-title">re_</h1>
+      </section>
+
+      <section>
+        <article class="check-out-container">
+          <nav>
+            <ul class="nav-ul">
+              <li><a href="cart-page.html" class="li-item">Cart</a></li>
+              <li><a href="check-out-page.html" class="li-item">Check</a></li>
+            </ul>
+          </nav>
+        </article>
+      </section>
+    </header>
+
+    <main>
+      <h1 class="related-product-title">Your order</h1>
+      <section class="cart">
+        <article class="cart-item-one">
+          <article class="cart-ul-one">
+            <ul>
+              <li class="li-cart">Item</li>
+            </ul>
+          </article>
+
+          <article class="cart-ul-two">
+            <ul>
+              <li class="li-cart">Variant</li>
+              <li class="li-cart">Price</li>
+              <li class="li-cart">Subtotal</li>
+            </ul>
+          </article>
+        </article>
+
+        <article class="cart-item-two">
+          <article class="cart-ul-one">
+            <ul class="list-separator">
+              <article>
+                <li class="li-cart">
+                  <img src="./Images/mango.webp" alt="mango" class="cart-img"/>
+                </li>
+              </article>
+              <article>
+                <li class="li-cart"><p>Mango, Dried, 0.25lb</p></li>
+                <li class="li-cart">
+                  <input class="cart-input" type="number" onchange="onCountChange(event)">
+                </li>
+              </article>
+            </ul>
+          </article>
+          <article class="cart-ul-two">
+            <ul>
+              <li class="li-cart">0.25lb</li>
+              <li class="li-cart">$3.99</li>
+              <li class="li-cart">$7.35</li>
+            </ul>
+          </article>
+        </article>
+
+        <!-- -------------------- -->
+        <article class="cart-item-two">
+            <article class="cart-ul-one">
+              <ul class="list-separator">
+                <article>
+                  <li class="li-cart">
+                    <img src="./Images/walnuts.webp" alt="mango" class="cart-img"/>
+                  </li>
+                </article>
+                <article>
+                  <li class="li-cart"><p>Walnuts, Raw, 1lb</p></li>
+                  <li class="li-cart">
+                    <input class="cart-input" type="number" onchange="onCountChange(event)">
+                  </li>
+                </article>
+              </ul>
+            </article>
+            <article class="cart-ul-two">
+              <ul>
+                <li class="li-cart">1lb</li>
+                <li class="li-cart">$7.99</li>
+                <li class="li-cart">$47.99</li>
+              </ul>
+            </article>
+          </article>
+
+             <!-- -------------------- -->
+        <article class="cart-item-two">
+            <article class="cart-ul-one">
+              <ul class="list-separator">
+                <article>
+                  <li class="li-cart">
+                    <img src="./Images/oats.webp" alt="oats" class="cart-img"/>
+                  </li>
+                </article>
+                <article>
+                  <li class="li-cart"><p>Oats, Rolled, 1lb</p></li>
+                  <li class="li-cart">
+                    <input class="cart-input" type="number" onchange="onCountChange(event)">
+                  </li>
+                </article>
+              </ul>
+            </article>
+            <article class="cart-ul-two">
+              <ul>
+                <li class="li-cart">1lb</li>
+                <li class="li-cart">$2.99</li>
+                <li class="li-cart">$7.35</li>
+              </ul>
+            </article>
+          </article>
+      </section>
+      <h2 class="total">Total: <span  class="total-sum"></span></h2>
+    </main>
+
+    <footer class="footer-element">
+      <h1 class="footer-title">
+        Follow us on Instagram
+        <span
+          ><a href="https://www.instagram.com/re_grocery/" class="fta"
+            >@re_grocery</a
+          ></span
+        >
+      </h1>
+      <section class="img-holder">
+        <article class="images">
+          <img class="footer-img" src="./images/footer-img1.jpg" alt="" />
+          <img class="footer-img" src="./images/footer-img2.jpg" alt="" />
+          <img class="footer-img" src="./images/footer-img3.jpg" alt="" />
+          <img class="footer-img" src="./images/footer-img4.jpg" alt="" />
+        </article>
+      </section>
+
+      <section class="origin-footer">
+        <article class="footer-article-one">
+          <h1 class="logo-title">re_</h1>
+          <p class="footer-text">
+            re_ makes it easier and more affordable to shop sustainably. To do
+            better than recycling. To say no to plastic altogether. Thanks to
+            you, we’ve diverted over 250,000 items of packaging from landfill
+            since opening on Earth Day 2020.
+          </p>
+        </article>
+      </section>
+
+      <section class="footer-last-sec">
+        <article class="footer-last-article">
+          <article class="subscribe">
+            <h1 class="sub-title">Let's Keep in Touch</h1>
+            <p class="sub-para">Sign-up for 10% off you first order</p>
+            <input class="sub-input" type="text" placeholder="Email" /><span
+              ><button class="subscribe-button">Subscribe</button></span
+            >
+          </article>
+          <p class="para-last">
+            © 2022 re grocery inc recreated by Nayden Lambev. All rights
+            reserved.
+          </p>
+        </article>
+      </section>
+    </footer>
+  </body>
+</html>
